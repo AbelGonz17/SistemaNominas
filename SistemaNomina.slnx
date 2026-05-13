@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/SistemaNomina.Domain/">
+    <Project Path="SistemaNomina.Domain/sistemaNomina.Domain.csproj" />
+  </Folder>
+  <Folder Name="/SistemaNomina.Infrastructure/">
+    <Project Path="SistemaNomina.Infrastructure/sistemaNomina.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/SistemaNomina.Presentation/">
+    <Project Path="SistemaNomina.Presentatio/SistemaNomina.Presentatio.csproj" Id="97a48fa2-eaab-457e-93ac-2f9743cd5eb7" />
+  </Folder>
+</Solution>
