@@ -6,11 +6,12 @@
 
         public override decimal CalcularPago()
         {
+            const decimal porcentajeBono = 0.10m;
+
             decimal comision = base.CalcularPago();
-            decimal bonoAdicional = SalarioBase * 0.10m;
+            decimal bonoAdicional = SalarioBase * porcentajeBono;
 
             return comision + SalarioBase + bonoAdicional;
         }
-
     }
 }

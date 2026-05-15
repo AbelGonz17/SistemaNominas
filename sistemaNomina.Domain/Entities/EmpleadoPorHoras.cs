@@ -5,18 +5,20 @@
         public decimal SueldoPorHora { get; set; }
         public decimal HorasTrabajadas { get; set; }
 
-
         public override decimal CalcularPago()
         {
+            const decimal horasRegulares = 40m;
+            const decimal tarifaHorasExtra = 1.5m;
+
             if (HorasTrabajadas <= 40)
             {
                 return SueldoPorHora * HorasTrabajadas;
             }
             else
             {
-                decimal pagoBase = SueldoPorHora * 40m;
-                decimal horasExtra = HorasTrabajadas - 40m;
-                decimal pagoExtra = SueldoPorHora * 1.5m * horasExtra;
+                decimal pagoBase = SueldoPorHora * horasRegulares;
+                decimal horasExtra = HorasTrabajadas - horasRegulares;
+                decimal pagoExtra = SueldoPorHora * tarifaHorasExtra * horasExtra;
 
                 return pagoBase + pagoExtra;
             }
