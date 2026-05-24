@@ -15,8 +15,8 @@ while (!salir)
     Console.WriteLine("1. Registrar Nuevo Empleado");
     Console.WriteLine("2. Generar Reporte Semanal");
     Console.WriteLine("3. Editar Empleado");
-    Console.WriteLine("4. Buscar Empleado por NSS"); 
-    Console.WriteLine("5. Salir");                  
+    Console.WriteLine("4. Buscar Empleado por NSS");
+    Console.WriteLine("5. Salir");
     Console.Write("Seleccione una opción: ");
 
     string opcion = Console.ReadLine()!;
@@ -33,10 +33,10 @@ while (!salir)
             EditarEmpleado(repositorio);
             break;
         case "4":
-            BuscarEmpleado(repositorio); 
+            BuscarEmpleado(repositorio);
             break;
         case "5":
-            salir = true;               
+            salir = true;
             break;
         default:
             Console.WriteLine("Opción no válida. Presione cualquier tecla para continuar...");
@@ -139,7 +139,6 @@ static void RegistrarEmpleado(IEmpleadoRepository repo)
 
 Console.WriteLine("Presione cualquier tecla para continuar...");
 Console.ReadKey();
-
 static void BuscarEmpleado(IEmpleadoRepository repo)
 {
     Console.Clear();
@@ -308,7 +307,6 @@ static void GenerarReporte(IEmpleadoRepository repo)
     Console.WriteLine("\nPresione cualquier tecla para volver al menú...");
     Console.ReadKey();
 }
-
 static void PrecargarEmpleados(IEmpleadoRepository repo)
 {
     Random rnd = new Random();
